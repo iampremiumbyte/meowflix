@@ -2,32 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+body {
+  width: 100vw;
+  background-color: #000;
+  min-height: 100dvh;
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 1920px) {
+  .container {
+    width: 1440px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1366px;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media screen and (max-width: 1366px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 1080px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
   }
 }
