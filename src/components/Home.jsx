@@ -23,8 +23,7 @@ const Home = () => {
         <div className={`${level === 1 ? 'flex' : 'hidden' } overlay absolute flex flex-col gap-2 items-center justify-center w-screen h-screen bg-black`}>
         {
         !playing &&
-          
-            loaded
+        (loaded
             ?
               <button className='p-4 px-6 rounded-lg bg-red-500 text-white font-bold'
               onClick={handlePlay}
@@ -33,15 +32,15 @@ const Home = () => {
             <img src='/logo-desktop.png' className='hidden max-w-2xl sm:block'/>
             <img src='/logo-mobile.png' className='sm:hidden w-3/4 block'/>
             <img src="/roll.png" alt="" className={`${styles.spinner} w-20`} />
-            </>
-          
+            </>)
         }
-        <video 
-        ref={player}
-        src='/MeowFlix_Intro.mov'
-        playsInline 
-        onEnded={()=> setLevel(2)}
-        className={`${playing ? 'block' : 'hidden'} ${styles.video} absolute w-screen h-screen`} />
+          <video 
+          ref={player}
+          src='/MeowFlix_Intro.mov'
+          playsInline 
+          onEnded={()=> setLevel(2)}
+          className={`${playing ? 'block' : 'hidden'} ${styles.video} absolute w-screen h-screen`} />
+
         </div>
 
         {/* profiles */}
@@ -94,7 +93,7 @@ const Home = () => {
         </div>
 
         <div className={`${level === 3 ? 'flex' : 'hidden' } sm:ml-4 links absolute h-screen left-0 flex justify-center items-center`}>
-          <div className="flex flex-col justify-center items-center gap-4 bg-black p-4 rounded-lg">
+          <div className="mt-40  sm:mt-0 flex flex-col justify-center items-center gap-4 bg-black p-4 rounded-lg">
             <a href="https://x.com/meowflixcoin">
               <img src="/twitter.png" className='w-6 mb-8' alt="" srcset="" />
             </a>
