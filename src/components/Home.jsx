@@ -95,10 +95,10 @@ const Home = () => {
 
         <div className={`${level === 3 ? 'flex' : 'hidden' } sm:ml-4 links absolute h-screen left-0 flex justify-center items-center`}>
           <div className="flex flex-col justify-center items-center gap-4 bg-black p-4 rounded-lg">
-            <a href="">
+            <a href="https://x.com/meowflixcoin">
               <img src="/twitter.png" className='w-6 mb-8' alt="" srcset="" />
             </a>
-            <a href="">
+            <a href="https://t.me/meowflixsolportal">
               <img src="/telegram.png" className='w-6' alt="" srcset="" />
             </a>
           </div>
