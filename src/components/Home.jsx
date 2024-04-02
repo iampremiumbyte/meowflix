@@ -74,7 +74,7 @@ const Home = () => {
             <h2 className='text-white font-lg my-4 ml-4 font-bold'>Trending Now</h2>
             <div className={`${styles.moviesWrap}`}>
               <img src='/movies/blackcat.jpg' className={`pl-15 rounded-md ${styles.movieImg}`}/>
-              {/* <img src='/movies/cat of steel.jpg' className={`rounded-md ${styles.movieImg}`}/> */}
+              <img src='/movies/cat of steel.jpg' className={`rounded-md ${styles.movieImg}`}/>
               <img src='/movies/cat_mar.jpg' className={`rounded-md ${styles.movieImg}`}/>
               <img src='/movies/catbox.jpg' className={`rounded-md ${styles.movieImg}`}/>
               <img src='/movies/catrix.jpg' className={`rounded-md ${styles.movieImg}`}/>
@@ -84,7 +84,7 @@ const Home = () => {
               <img src='/movies/meauleficent.jpg' className={`rounded-md ${styles.movieImg}`}/>
               <img src='/movies/meowserables.jpg' className={`rounded-md ${styles.movieImg}`}/>
               <img src='/movies/Nastyfurious.jpg' className={`rounded-md ${styles.movieImg}`}/>
-              {/* <img src='/movies/planet of cats.jpg' className={`rounded-md ${styles.movieImg}`}/> */}
+              <img src='/movies/planet of cats.jpg' className={`rounded-md ${styles.movieImg}`}/>
               <img src='/movies/robocat.jpg' className={`rounded-md ${styles.movieImg}`}/>
               <img src='/movies/silence.jpg' className={`rounded-md ${styles.movieImg}`}/>
               <img src='/movies/the_clat.jpg' className={`rounded-md ${styles.movieImg}`}/>
